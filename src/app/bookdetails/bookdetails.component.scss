@@ -1,0 +1,41 @@
+.bookdetails{
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    max-width: 400px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid rgb(235, 134, 134);
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px;
+        text-align: start;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #4e6a93, #2a8bab, #2dabab, #71c59a, #c0d989);
+    }
+    button:hover{
+        transform: scale(1.1);
+        font-weight: lighter;
+    }
+    span{
+        color: rgb(247, 102, 102);
+        font-size: 12px;
+    }
+    input,textarea{
+        background-color: rgb(95, 93, 93);
+        padding: 8px;
+        border-radius: 8px;
+        color: white;
+    }
+}

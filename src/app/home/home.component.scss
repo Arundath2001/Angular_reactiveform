@@ -1,0 +1,31 @@
+.home{
+    &__cont{
+        text-align: center;
+        padding: 50px;
+        background: transparent;
+        backdrop-filter: blur(30px);
+        max-width: 400px;
+        margin: 300px auto;
+        border-radius: 20px;
+        border: 1px solid rgb(249, 111, 111);
+    }
+    &__cont:hover{
+        transform: scale(1.1);
+    }
+    p{
+        font-size: 20px;
+        color: white;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #4e6a93, #2a8bab, #2dabab, #71c59a, #c0d989);
+    }
+    button:hover{
+        transform: scale(1.1);
+        font-weight: lighter;
+    }
+}

@@ -1,0 +1,75 @@
+<div class="bookdetails">
+<form [formGroup]="bookdetails" (ngSubmit)="Save()">
+    <div>
+      <label for="bookName">Book Name:</label>
+      <input type="text" id="bookName" formControlName="bookName">
+      <span *ngIf="hasError('bookName', 'required')">
+        BookName is a required field!
+      </span>
+    </div>
+  
+    <div>
+      <label for="author">Author:</label>
+      <input type="text" id="author" formControlName="author">
+      <span *ngIf="hasError('author', 'required')">
+        Author is required!
+      </span>
+    </div>
+  
+    <div>
+      <label for="publication">Publication:</label>
+      <input type="text" id="publication" formControlName="publication">
+      <span *ngIf="hasError('publication', 'required')">
+        Publication is required!
+      </span>
+    </div>
+  
+    <div>
+      <label for="price">Price:</label>
+      <input type="text" id="price" formControlName="price">
+      <span *ngIf="hasError('price', 'required')">
+        Price is required.
+      </span>
+      <span *ngIf="hasError('price', 'pattern')">
+        Price must be a number!
+      </span>
+    </div>
+  
+    <div>
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" formControlName="genre">
+      <span *ngIf="hasError('genre', 'required')">
+        It's a required field!
+      </span>
+    </div>
+  
+    <div>
+      <label for="publishedDate">Published Date:</label>
+      <input type="date" id="publishedDate" formControlName="publishedDate">
+      <span *ngIf="hasError('publishedDate', 'required')">
+         Date is required!
+      </span>
+    </div>
+  
+    <div>
+      <label for="country">Country:</label>
+      <input type="text" id="country" formControlName="country">
+      <span *ngIf="hasError('country', 'required')">
+        Country is required!
+      </span>
+    </div>
+  
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" formControlName="description"></textarea>
+      <span *ngIf="hasError('description', 'required')">
+        Provide a small discription!
+      </span>
+    </div>
+  
+    <div>
+      <button type="submit" [disabled]="!bookdetails.valid">Save Book</button>
+    </div>
+  </form>
+  
+</div>
