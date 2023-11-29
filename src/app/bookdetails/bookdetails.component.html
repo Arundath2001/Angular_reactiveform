@@ -2,7 +2,7 @@
 <form [formGroup]="bookdetails" (ngSubmit)="Save()">
     <div>
       <label for="bookName">Book Name:</label>
-      <input type="text" id="bookName" formControlName="bookName">
+      <input type="text" id="bookName" formControlName="bookName" placeholder="Book Name">
       <span *ngIf="hasError('bookName', 'required')">
         BookName is a required field!
       </span>
@@ -10,7 +10,7 @@
   
     <div>
       <label for="author">Author:</label>
-      <input type="text" id="author" formControlName="author">
+      <input type="text" id="author" formControlName="author" placeholder="Author">
       <span *ngIf="hasError('author', 'required')">
         Author is required!
       </span>
@@ -18,7 +18,7 @@
   
     <div>
       <label for="publication">Publication:</label>
-      <input type="text" id="publication" formControlName="publication">
+      <input type="text" id="publication" formControlName="publication" placeholder="Publication">
       <span *ngIf="hasError('publication', 'required')">
         Publication is required!
       </span>
@@ -26,7 +26,7 @@
   
     <div>
       <label for="price">Price:</label>
-      <input type="text" id="price" formControlName="price">
+      <input type="text" id="price" formControlName="price" placeholder="Price">
       <span *ngIf="hasError('price', 'required')">
         Price is required.
       </span>
@@ -37,7 +37,7 @@
   
     <div>
       <label for="genre">Genre:</label>
-      <input type="text" id="genre" formControlName="genre">
+      <input type="text" id="genre" formControlName="genre" placeholder="Genre">
       <span *ngIf="hasError('genre', 'required')">
         It's a required field!
       </span>
@@ -45,7 +45,7 @@
   
     <div>
       <label for="publishedDate">Published Date:</label>
-      <input type="date" id="publishedDate" formControlName="publishedDate">
+      <input type="date" id="publishedDate" formControlName="publishedDate" placeholder="published Date">
       <span *ngIf="hasError('publishedDate', 'required')">
          Date is required!
       </span>
@@ -53,7 +53,7 @@
   
     <div>
       <label for="country">Country:</label>
-      <input type="text" id="country" formControlName="country">
+      <input type="text" id="country" formControlName="country" placeholder="Country">
       <span *ngIf="hasError('country', 'required')">
         Country is required!
       </span>
@@ -61,7 +61,7 @@
   
     <div>
       <label for="description">Description:</label>
-      <textarea id="description" formControlName="description"></textarea>
+      <textarea id="description" formControlName="description" placeholder="Description"></textarea>
       <span *ngIf="hasError('description', 'required')">
         Provide a small discription!
       </span>

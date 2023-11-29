@@ -10,14 +10,14 @@ export class BookDetailsComponent {
   bookdetails!: FormGroup;
 
   constructor(private fb: FormBuilder) {
-    this.createForm();
+    this.newform();
   }
-  createForm() {
+  newform() {
     this.bookdetails = this.fb.group({
       bookName: ['', Validators.required],
       author: ['', Validators.required],
       publication: ['',Validators.required],
-      price: ['', [Validators.required, Validators.pattern(/^\d+(\.\d{1,5})?$/)]],
+      price: ['', [Validators.required, Validators.pattern(/^\d*$/)]],
       genre: ['',Validators.required],
       publishedDate: ['', Validators.required],
       country: ['', Validators.required],
